@@ -1,0 +1,86 @@
+extends layout
+
+block content
+    div.row
+        div.large-12.columns
+            h2= "Welcome to Foundation"
+            p= "This is version 4.1.5"
+            hr
+    div.row
+        div.large-8.columns
+            h3= "The Grid"
+            div.row
+                div.large-12.columns
+                    div.panel
+                        p= "This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid."
+            div.row
+                div.large-6.columns
+                    div.panel
+                        p= "Six columns"
+                div.large-6.columns
+                    div.panel
+                        p= "Six columns"
+            div.row
+                div.large-4.columns
+                    div.panel
+                        p= "Four columns"
+                div.large-4.columns
+                    div.panel
+                        p= "Four columns"
+                div.large-4.columns
+                    div.panel
+                        p= "Four columns"
+            h3= "Buttons"
+            div.row
+                div.large-6.columns
+                    p
+                        a.small.button(href="#")= "Small Button"
+                    p
+                        a.button(href="#")= "Medium Button"
+                    p
+                        a.large.button(href="#")= "Large Button"
+                div.large-6.columns
+                    p
+                        a.small.alert.button(href="#")= "Small Alert Button"
+                    p
+                        a.success.button(href="#")= "Medium Success Button"
+                    p
+                        a.large.secondary.button(href="#")= "Large Secondary Button"
+            h3= "Dropdowns"
+            div.row
+                div.large-12.columns
+                    a(href="#", data-dropdown="drop1")= "Has Dropdown"
+                    a(href="#", data-dropdown="drop2")= "Has Content Dropdown"
+
+                    ul#drop1.f-dropdown(data-dropdown-content)
+                        li
+                            a(href="#")= "This is a link"
+                        li
+                            a(href="#")= "This is another"
+                        li
+                            a(href="#")= "Yet another"
+                    ul#drop2.f-dropdown.content(data-dropdown-content)
+                        li
+                            a(href="#")= "This is a link"
+                        li
+                            a(href="#")= "This is another"
+                        li
+                            a(href="#")= "Yet another"
+
+
+        div.large-4.columns
+            h4= "Getting started"
+            p= "We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going."
+            h4= "Other resources"
+            p= "Once you've exhausted the fun in this document, you should check out:"
+            ul.disc
+                li
+                    a(href="http://foundation.zurb.com/docs")= "Foundation Documentation"
+                    br
+                li
+                    a(href="http://github.com/zurb/foundation")= "Foundation on Github"
+                    br
+                li
+                    a(href="http://twitter.com/foundationzurb")= "@foundationzurb"
+                    br
+                    ="Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker)."
